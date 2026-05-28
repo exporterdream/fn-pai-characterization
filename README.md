@@ -3,32 +3,6 @@ Code and supplementary materials for: Integration of Bioinformatics and Machine 
 
 The study presents the first systematic computational characterization of pathogenicity islands (PAIs) in F. nucleatum ATCC 25586, integrating genomic island prediction, functional annotation, co-expression network analysis, structural modeling, and genome-scale metabolic modeling to identify three candidate PAIs and propose a mechanistic hypothesis linking hemolysin-mediated iron acquisition to colorectal cancer progression.
 
-├── README.md                              # This file
-│
-├── code/
-│   ├── Supplementary_data_S4_python_pipeline.ipynb   # Main Python analysis pipeline
-│   ├── Supplementary_data_S5_bnlearn_analysis.R      # Bayesian network (bnlearn) analysis
-│   ├── convert_wig_to_expression.ipynb               # GEO WIG → expression matrix converter
-│   └── Supplementary_data_S5_bnlearn_README.md       # Detailed bnlearn usage guide
-│
-├── data/
-│   ├── Supplementary_data_S1_metabolic_model.xml     # CarveMe genome-scale metabolic model (SBML)
-│   ├── Supplementary_data_S2_genome.fna              # F. nucleatum ATCC 25586 genome (FASTA)
-│   └── Supplementary_data_S3_annotation.gb           # Genome annotation (GenBank format)
-│
-└── supplementary_tables/
-    ├── Supplementary_Table_S1_BLAST_results.xlsx      # BLASTP annotation for PAI1/2/3 genes
-    ├── Supplementary_Table_S2_promoters.xlsx          # PePPER promoter predictions (genome-wide)
-    ├── Supplementary_Table_S3_STRING_networks.xlsx    # STRING interaction networks for all PAIs
-    ├── Supplementary_Table_S4_AlphaFold_TMHMM.xlsx   # AlphaFold3 + DeepTMHMM predictions
-    ├── Supplementary_Table_S5_bnlearn_edges.xlsx      # Significant co-expression edges (PAI1/2/3)
-    ├── Supplementary_Table_S6_VF_analysis.xlsx        # VFDB + VICTORS virulence factor hits
-    ├── Supplementary_Table_S7_FBA_results.xlsx        # Flux balance analysis iron conditions
-    ├── Supplementary_Table_S8_high_CAI_genes.csv      # High-CAI genes (top 20%, CAI ≥ 0.771)
-    ├── Supplementary_Table_S9_low_CAI_genes.csv       # Low-CAI genes (bottom 20%, CAI ≤ 0.670)
-    └── Supplementary_Table_S10_RSCU.csv               # Relative Synonymous Codon Usage values
-
-
     
 SUPPLEMENTARY TABLES
 --------------------
