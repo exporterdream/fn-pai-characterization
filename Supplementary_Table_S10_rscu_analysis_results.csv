@@ -1,0 +1,62 @@
+Codon,Amino_Acid,Count,RSCU,Bias_Level
+AAA,K,56121,1.689,Highly Preferred
+AAC,N,4640,0.221,Highly Avoided
+AAG,K,10334,0.311,Highly Avoided
+AAT,N,37415,1.779,Highly Preferred
+ACA,T,15611,1.951,Highly Preferred
+ACC,T,864,0.108,Highly Avoided
+ACG,T,300,0.038,Highly Avoided
+ACT,T,15224,1.903,Highly Preferred
+AGA,R,18275,5.245,Highly Preferred
+AGC,S,1722,0.263,Highly Avoided
+AGG,R,1468,0.421,Highly Avoided
+AGT,S,11125,1.697,Highly Preferred
+ATA,I,32075,1.479,Preferred
+ATC,I,3800,0.175,Highly Avoided
+ATG,M,15320,1.0,Neutral
+ATT,I,29172,1.345,Preferred
+CAA,Q,12973,1.824,Highly Preferred
+CAC,H,1073,0.28,Highly Avoided
+CAG,Q,1250,0.176,Highly Avoided
+CAT,H,6578,1.72,Highly Preferred
+CCA,P,8065,1.919,Highly Preferred
+CCC,P,373,0.089,Highly Avoided
+CCG,P,142,0.034,Highly Avoided
+CCT,P,8234,1.959,Highly Preferred
+CGA,R,149,0.043,Highly Avoided
+CGC,R,68,0.02,Highly Avoided
+CGG,R,25,0.007,Highly Avoided
+CGT,R,922,0.265,Highly Avoided
+CTA,L,5096,0.498,Highly Avoided
+CTC,L,396,0.039,Highly Avoided
+CTG,L,711,0.069,Highly Avoided
+CTT,L,11868,1.159,Preferred
+GAA,E,45851,1.776,Highly Preferred
+GAC,D,3686,0.208,Highly Avoided
+GAG,E,5794,0.224,Highly Avoided
+GAT,D,31760,1.792,Highly Preferred
+GCA,A,17483,1.946,Highly Preferred
+GCC,A,1794,0.2,Highly Avoided
+GCG,A,473,0.053,Highly Avoided
+GCT,A,16183,1.801,Highly Preferred
+GGA,G,24815,2.378,Highly Preferred
+GGC,G,1348,0.129,Highly Avoided
+GGG,G,3013,0.289,Highly Avoided
+GGT,G,12562,1.204,Preferred
+GTA,V,14833,1.485,Preferred
+GTC,V,1372,0.137,Highly Avoided
+GTG,V,2730,0.273,Highly Avoided
+GTT,V,21008,2.104,Highly Preferred
+TAC,Y,3235,0.224,Highly Avoided
+TAT,Y,25613,1.776,Highly Preferred
+TCA,S,12716,1.939,Highly Preferred
+TCC,S,700,0.107,Highly Avoided
+TCG,S,384,0.059,Highly Avoided
+TCT,S,12697,1.936,Highly Preferred
+TGC,C,514,0.206,Highly Avoided
+TGG,W,4073,1.0,Neutral
+TGT,C,4465,1.794,Highly Preferred
+TTA,L,37369,3.649,Highly Preferred
+TTC,F,4100,0.257,Highly Avoided
+TTG,L,6007,0.587,Avoided
+TTT,F,27847,1.743,Highly Preferred
