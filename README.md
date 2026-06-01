@@ -7,8 +7,7 @@ The study presents the first systematic computational characterization of pathog
 SUPPLEMENTARY TABLES
 --------------------
 
-Table S1a-c: BLAST analysis results for genes in predicted pathogenicity 
-islands PAI1, PAI2, and PAI3.
+Table S1a-c: BLAST analysis results for genes in predicted pathogenicity islands PAI1, PAI2, and PAI3.
 
 Table S2: Promoter predictions for F. nucleatum ATCC 25586 genome using 
 PePPER. Contains predicted promoters with confidence scores 
@@ -17,22 +16,21 @@ PePPER. Contains predicted promoters with confidence scores
 
 Table S3: STRING protein-protein interaction network data for all 3 PAI proteins.
 
-Table S4: AlphaFold-Multimer structure (monomer and multimer) predictions and TMHMM transmembrane 
-helix predictions for all 3 PAI proteins. Includes pTM and ipTM confidence scores.
+Table S4: AlphaFold-Multimer structure (monomer and multimer) predictions and TMHMM transmembrane helix predictions for all 3 PAI proteins. Includes pTM and ipTM confidence scores.
 
-Table S5: Co-expression network edges predicted by Bayesian network learning 
-(bnlearn) from F. nucleatum transcriptomic data (n=18 samples) that is significant.
+Table S5: Co-expression network edges predicted by Bayesian network learning (bnlearn) from F. nucleatum transcriptomic data (n=18 samples) that is significant.
 
 Table S6: Comprehensive virulence factor analysis using databases (VFDB + VICTORS) for all genomic regions of interest. Hits from both database shown.
 
-Table S7: Flux balance analysis (FBA) results showing predicted growth rates 
-under different iron availability conditions.
+Table S7: Flux balance analysis (FBA) results showing predicted growth rates under different iron availability conditions.
 
 Table S8: Gene classified as high-CAI (top 20%, CAI ≥ 0.771) 
 
 Table S9: Gene classified as low-CAI (bottom 20%, CAI ≤ 0.670) 
 
 Table S10: Relative Synonymous Codon Usage (RSCU) analysis result, with amino acid, sequence, and RSCU score
+
+Table S11: eggNOG-mapper v2 (Huerta-Cepas et al., 2018) result. Key virulence-relevant findings are listed.
 
 ---
 
