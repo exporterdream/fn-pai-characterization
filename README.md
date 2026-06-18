@@ -3,6 +3,7 @@ Code and supplementary materials for: Integration of Bioinformatics and Machine 
 
 The study presents the first systematic computational characterization of pathogenicity islands (PAIs) in F. nucleatum ATCC 25586, integrating genomic island prediction, functional annotation, co-expression network analysis, structural modeling, and genome-scale metabolic modeling to identify three candidate PAIs and propose a mechanistic hypothesis linking hemolysin-mediated iron acquisition to colorectal cancer progression.
 
+Code zenodo DOI: 10.5281/zenodo.20748204
     
 SUPPLEMENTARY TABLES
 --------------------
