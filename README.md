@@ -1,4 +1,3 @@
-[Supplementary_README.txt](https://github.com/user-attachments/files/31295017/Supplementary_README.txt)
 SUPPLEMENTARY MATERIALS README
 ==============================
 
@@ -16,9 +15,10 @@ CONTENTS
 4. Software Versions
 5. File Naming Notes
 6. Data Availability
+--------------------
 
 1. SUPPLEMENTARY TABLES
-Separated tables can be found on GitHub with the Supplementary Data (S1-S7)
+Separated tables on GitHub
 --------------------
 
 Table S1 (a-c): BLAST analysis results for genes in predicted pathogenicity islands PAI1, PAI2, and PAI3. Each table lists query proteins, subject hits, percent identity, alignment length, E-value, and bit score from BLASTP searches against the NCBI non-redundant (nr) and UniProt Swiss-Prot databases.
