@@ -15,8 +15,8 @@ CONTENTS
 4. Software Versions
 5. File Naming Notes
 6. Data Availability
---------------------
 
+--------------------
 1. SUPPLEMENTARY TABLES
 Separated tables on GitHub
 --------------------
@@ -30,7 +30,7 @@ PePPER. Contains predicted promoters with confidence scores
 
 Table S3: STRING protein-protein interaction network data for all 3 PAI proteins. Includes interaction edges, combined scores, and evidence channel breakdowns from STRING v12.0.
 
-Table S4: AlphaFold3 Server structure predictions (monomer and multimer) and DeepTMHMM transmembrane topology predictions for all 3 PAI proteins. Includes pTM and ipTM confidence scores for monomer and complex models, respectively, and topology classifications (GLOB, SP, TM, SP+TM, BETA).
+Table S4: DeepTMHMM transmembrane topology predictions for all 75 PAI-encoded proteins, and AlphaFold3 Server structure predictions (monomer and multimer) for 10 selected proteins (8 PAI-encoded virulence-associated proteins and 2 lysozyme inhibitors). Includes pTM and ipTM confidence scores for monomer and complex models, respectively, and topology classifications (GLOB, SP, TM, SP+TM, BETA).
 
 Table S5: Co-expression and differential expression analysis (GSE161360). Includes DESeq2 differential expression results across growth phases and genome-wide Spearman co-expression statistics.
 
@@ -44,13 +44,13 @@ Table S9: Gene classified as low-CAI (bottom 20%, CAI ≤ 0.670)
 
 Table S10: Relative Synonymous Codon Usage (RSCU) analysis result, with amino acid, sequence, and RSCU score
 
-Table S11: eggNOG-mapper v2 (Huerta-Cepas et al., 2018) result. Key virulence-relevant findings are listed. Sheet 1 contains raw annotations (seed orthologs, COG categories, KEGG pathway mappings, GO terms). Sheet 2 contains curated virulence-relevant findings with FNxxxx locus tag assignments.
+Table S11: eggNOG-mapper v2 (Huerta-Cepas et al., 2019) result. Key virulence-relevant findings are listed. Sheet 1 contains raw annotations (seed orthologs, COG categories, KEGG pathway mappings, GO terms). Sheet 2 contains curated virulence-relevant findings with FNxxxx locus tag assignments.
 
 Table S12: Comparative Genomics Analysis, organized from the results of Supplementary_data_S6_PAI_comparative_genomics_pipeline. 
 Three components:
-  1) gene_content_conservation: All 75 PAI genes with coordinates, product, protein ID, aa length, conservation (n/15 and n/17), and mobility element classification (IS family, status, length, location).
-  2) compositional_phylogenetic: GC%, z-scores (GC + dinucleotide), atypicality flags, mobility genes inside/flanking, gene trees tested with nRF values, mean nRF for each PAI.
-  3) Comparative Genomics Lists: All 17 genomes used for comparative genomics analysis.
+  a) gene_content_conservation: All 75 PAI genes with coordinates, product, protein ID, aa length, conservation (n/15 and n/17), and mobility element classification (IS family, status, length, location).
+  b) compositional_phylogenetic: GC%, z-scores (GC + dinucleotide), atypicality flags, mobility genes inside/flanking, gene trees tested with nRF values, mean nRF for each PAI.
+  c) Comparative Genomics Lists: All 17 genomes used for comparative genomics analysis.
 
 Table S13: a) Comparison between AlphaFold3 monomer models and experimentally determined reference structures from the Protein Data Bank. Includes the query protein, reference structure, TM-score (query-normalized and reference-normalized), RMSD, aligned length, sequence identity across the aligned region, and interpretation of fold agreement.
 b) Conserved catalytic or functional motifs mapped between AlphaFold3 models and their corresponding reference structures. For each protein, reports the reference motif, the aligned query residue(s), whether the key residue is conserved, whether the motif aligns at the same structural position, and a brief note on functional interpretation.
@@ -64,17 +64,7 @@ Table S15:Prokka annotations validated with RNAseq validation.
 2. SUPPLEMENTARY FIGURES
 ---------------------
 
-Figure S1 (a-e): Promoter motif analysis of high and low CAI genes and PAI loci using WebLogo (Crooks et al., 2004; Schneider & Stephens, 1990). 
-	(a) Sequence logo of enriched 8-mer motifs in promoters of high CAI genes (CAI > 0.771). 
-	(b) Sequence logo of promoter motifs from low CAI genes (CAI < 0.670). 
-	(c) Promoter motif analysis of genes in PAI1. 
-	(d) Promoter motif analysis of genes in PAI2. 
-	(e) Promoter motif analysis of genes in PAI3. 
-The motifs were generated from 8-mer sequences extracted from predicted promoter regions, filtered by minimum occurrence, sorted by frequency, and visualized with WebLogo.
-
-Figure S2: Gene-level conservation heatmap for the three candidate PAIs across 15 Fusobacterium genomes and 2 outgroups. Each row represents a PAI-encoded gene; each column represents a genome. Color indicates presence/absence based on TBLASTN homology
-
-Figure S3 (a-c): Synteny analysis of the three candidate PAIs across representative Fusobacterium genomes. (a) PAI1. (b) PAI2. (c)PAI3. Homologous genes are connected by colored blocks; inversions are shown by crossing lines. PAI3 exhibits the most stable synteny; PAI1 and PAI2 show local rearrangements associated with flanking transposase insertions.
+Figure S1: Gene-level conservation heatmap for the three candidate PAIs across 15 Fusobacterium genomes and 2 outgroups. Each row represents a PAI-encoded gene; each column represents a genome. Color indicates presence/absence based on TBLASTN homology
 
 ---
 
@@ -111,7 +101,7 @@ Data S6: Python analysis pipeline for Comparative Genomic Analysis.
 - M3: compositional analysis (GC content, dinucleotide frequency distances vs. 500 size-matched random genomic windows)
 - M4: mobility element annotation (IS elements, transposases)
 - M5: targeted HGT tests (composition, mobility context, gene-tree concordance via MAFFT + FastTree, normalized Robinson-Foulds distances)
-Requires: Python 3.11, NCBI BLAST+, MAFFT, FastTree, Biopython, pandas, matplotlib, openpyxl.
+Requires: Python 3.11, NCBI BLAST+ 2.16.0+, MAFFT v7.526, FastTree 2.1.9, Biopython, pandas, matplotlib, openpyxl.
 
 Data S7: Structure analysis. Convert AlphaFold-downloaded structures from cif to PDB, and TM-align and MAFFT analyses 
 
@@ -120,7 +110,7 @@ Data S7: Structure analysis. Convert AlphaFold-downloaded structures from cif to
 4. SOFTWARE VERSIONS
 -----------------
 
-Python 3.9 (Data S4 notebook)
+Python 3.11 (Data S4 notebook)
   - COBRApy 0.26.0
   - Biopython 1.79
   - pandas 1.4.0
@@ -132,9 +122,8 @@ Python 3.11 (Data S6 comparative genomics pipeline)
   - Biopython (SeqIO, AlignIO, Phylo)
   - pandas, matplotlib, openpyxl
 
-R 4.1.0
-  - DESeq2 (Bioconductor)
-  - bnlearn 4.7
+R 4.5.2
+  - DESeq2 v1.50.2 (Bioconductor)
   - tidyverse
   - pheatmap
   - RColorBrewer
@@ -143,17 +132,17 @@ R 4.1.0
 External tools and web servers:
   - CarveMe 1.5.1 (genome-scale metabolic model reconstruction)
   - IslandViewer 4 (genomic island prediction; web server)
-  - Prokka v1.14 (genome annotation)
+  - Prokka v1.14.6 (genome annotation)
   - eggNOG-mapper v2.0 (functional annotation; eggNOG 5.0 database)
   - PePPER v2.0 (promoter prediction; web server)
   - STRING v12.0 (protein-protein interaction networks; web API)
   - DeepTMHMM (transmembrane topology prediction; web server)
   - AlphaFold3 Server (structural modeling; alphafoldserver.com)
-  - NCBI BLAST+ (BLASTN, TBLASTN for comparative genomics; BLASTP via
+  - NCBI BLAST+ 2.16.0+ (BLASTN, TBLASTN for comparative genomics; BLASTP via
     Biopython NCBIWWW.qblast for nr/Swiss-Prot/VFDB/VICTORS searches)
-  - MAFFT (multiple sequence alignment for gene trees and structural analysis)
-  - FastTree (phylogenetic tree inference for gene-tree concordance tests)
-  - TM-align (structural alignment of AlphaFold3 models vs. PDB references)
+  - MAFFT v7.526 (multiple sequence alignment for gene trees and structural analysis)
+  - FastTree 2.1.9 (phylogenetic tree inference for gene-tree concordance tests)
+  - TM-align 20220412 (structural alignment of AlphaFold3 models vs. PDB references)
   - WebLogo (sequence logo visualization for promoter motif analysis)
   - NetGenes database (predicted essentiality; downloaded gene set)
 
