@@ -19,8 +19,8 @@ Inputs:
 #   W83.fasta     -> Porphyromonas gingivalis W83 (outgroup)
 #   E.coil.fasta  -> Escherichia coli 09-00049 (outgroup)
 #   Supplementary_Table_S1_PAI1Blast.xlsx
-#   Supplementary_Table_S1_PAI2Blast.xlsx.xlsx
-#   Supplementary_Table_S1_PAI3Blast.xlsx.xlsx
+#   Supplementary_Table_S1_PAI2Blast.xlsx
+#   Supplementary_Table_S1_PAI3Blast.xlsx
 # Everything else (genomes, proteins, GFFs) is downloaded from NCBI from M0
 
 Reproduces the analysis in report_PAI_comparative_genomics.md:
