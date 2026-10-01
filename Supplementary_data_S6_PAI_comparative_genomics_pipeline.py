@@ -150,8 +150,8 @@ def m0():
     # parse PAI gene lists from the my BLAST tables
     import openpyxl
     tables = {"PAI1": "Supplementary_Table_S1_PAI1Blast.xlsx",
-              "PAI2": "Supplementary_Table_S1_PAI2Blast.xlsx.xlsx",
-              "PAI3": "Supplementary_Table_S1_PAI3Blast.xlsx.xlsx"}
+              "PAI2": "Supplementary_Table_S1_PAI2Blast.xlsx",
+              "PAI3": "Supplementary_Table_S1_PAI3Blast.xlsx"}
     genes = {}
     for pai, fn in tables.items():
         ws = openpyxl.load_workbook(os.path.join(INDIR, fn), read_only=True).active
