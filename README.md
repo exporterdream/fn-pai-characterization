@@ -1,8 +1,7 @@
 SUPPLEMENTARY MATERIALS README
 ==============================
 
-Integration of Bioinformatics and Machine Learning to Characterize 
-Fusobacterium nucleatum's Pathogenicity
+Computational characterization of three conserved pathogenicity-associated genomic regions in Fusobacterium nucleatum ATCC 25586
 
 Authors: Zihan Tian, Pietro Lio'
 
